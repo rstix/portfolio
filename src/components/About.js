@@ -35,6 +35,7 @@ export default function About() {
               <span className="text-green-100">{ author.name}</span>
             </h1>
             <div className='text-white'>
+              {/* {author.bio} */}
               <BlockContent blocks={ author.bio} projectId='ine20fka' dataset='production' />
             </div>
           </div>
