@@ -28,14 +28,13 @@ export default function About() {
     <main>
       <div className='p-16 container mx-auto relative'>
         <section className='bg-green-800 rounded-lg p-20 flex'>
-          <img src={urlFor(author.authorImg).url()} className='rounded w-56 h-56 mr-8' />
+          <img alt='author icon' src={urlFor(author.authorImg).url()} className='rounded w-56 h-56 mr-8' />
           <div className='text-lg flex flex-col justify-center'>
             <h1 className='cursive text-6xl text-green-300 mb-5'>
               Hey there. I'm {" "}
               <span className="text-green-100">{ author.name}</span>
             </h1>
             <div className='text-white'>
-              {/* {author.bio} */}
               <BlockContent blocks={ author.bio} projectId='ine20fka' dataset='production' />
             </div>
           </div>
