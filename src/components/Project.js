@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from "react";
-// import project from "../../studio/schemas/project";
 import sanityClient from '../client'
 
 
@@ -22,9 +21,9 @@ export default function Projects() {
   },[])
 
   return (
-    <main className='bg-green-100 min-h-screen p12'>
+    <main className='bg-green-100 min-h-screen p-12'>
       <section className='container mx-auto'>
-        <h1 className='text-5xsl flex justify-center cursive'>My Projects</h1>
+        <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
         <h2 className='text-lg text-gray-600 flex justify-center mb-12'>Welcome to my projects page!</h2>
         <section className='grid grid-cols-2 gap-8'>
           {projectData && projectData.map((project,index)=>(
@@ -48,7 +47,7 @@ export default function Projects() {
               <p className='my-6 text-lg text-gray-700 leading-relaxed'></p>
               <a href={project.link} target='_blank' rel="noreferrer noopener" className='text-red-500 font-bold hover:underline hover:text-red-400'>
                 View The Project{" "}
-                <span role='img' aria-lavbel='right pointer'>👉</span>
+                <span role='img' aria-label='right pointer'>👉</span>
               </a>
             </div>
             </article>
